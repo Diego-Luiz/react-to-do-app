@@ -1,0 +1,14 @@
+.missing-title{ font-size: var(--fz-biggest); }
+.missing-link{
+    display: inline-block;
+    width: max-content;
+    padding: .5em;
+    color: var(--gray-clr);
+    text-decoration: none;
+    font-size: var(--fz-normal);
+}
+.missing-link span{ text-decoration: underline; }
+.missing-link::before{
+    content: '\25C0';
+    padding-right: .25em;
+}

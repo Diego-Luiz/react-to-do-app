@@ -1,0 +1,78 @@
+.form-todo{
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 700px;
+    padding: .25em;
+    margin: .5em auto 0 auto;
+    border-radius: 5px;
+    background-image: linear-gradient(to right bottom, var(--purple-clr) 60%, #0069ff);
+    box-sizing: border-box;
+    font-size: calc(var(--fz-normal) - 0.05rem);
+}
+.form-todo.--edit{
+    flex-direction: column;
+    margin: initial;
+    max-width: initial;
+    background: var(--gray-clr);
+}
+.form-todo__btn-submit{
+    margin-left: auto;
+    padding: .55em 1em;
+    background-color: var(--gray-clr);
+    border: none;
+    border-radius: 5px;
+    outline: ridge 2px transparent;
+    cursor: pointer;
+    transition: background, color, outline, 200ms ease-in-out;
+}
+.form-todo__btn-submit.--add{
+    background-color: transparent;
+    color: white;
+}
+.form-todo__btn-submit.--add:focus{ 
+    outline: inherit;
+    outline-color: var(--white-clr); 
+}
+.form-todo__btn-submit.--edit{
+    width: max-content;
+    margin: .75em 0 .25em auto;
+    margin-left: auto;
+    outline: ridge 2px var(--main-clr);
+    outline-offset: -1px;
+}
+.form-todo__btn-submit.--edit:focus{
+    background-color: var(--main-clr);
+    color: white;
+    outline: inherit;
+    outline-color: var(--purple-clr);
+}
+@supports selector(:focus-visible){
+    .form-todo__btn-submit.--add:focus{ outline: none; }
+    .form-todo__btn-submit.--edit:focus{
+        background-color: initial;
+        color: initial;
+        outline: ridge 2px var(--main-clr);
+        outline-offset: -1px;
+    }
+    .form-todo__btn-submit.--add:focus-visible{ 
+        outline: inherit;
+        outline-color: var(--white-clr); 
+    }
+    .form-todo__btn-submit.--edit:focus-visible{
+        background-color: var(--main-clr);
+        color: white;
+        outline: inherit;
+        outline-color: var(--purple-clr);
+    }
+}
+@media (hover:hover) and (pointer: fine){
+    .form-todo__btn-submit.--add:hover{
+        outline: solid 2px var(--white-clr);
+    }
+    .form-todo__btn-submit.--edit:hover{
+        background-color: var(--main-clr);
+        color: var(--white-clr);
+        outline-color: var(--purple-clr);        
+    }
+}

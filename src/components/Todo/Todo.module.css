@@ -1,0 +1,79 @@
+.todo{
+    position: relative;
+    display: flex;
+    max-height: 150px;
+    padding: .5em .25em;
+    border-radius: 5px;
+    transition: all .25s ease-in;
+    overflow: auto;
+}
+.todo.--no-transition{
+    transition: none;
+}
+.todo.--orange{ background-color: var(--orange-clr); }
+.todo.--blue{ background-color: var(--blue-clr); }
+.todo.--pink{ background-color: var(--pink-clr); }
+.todo.--purple{ background-color: var(--purple-clr); }
+.todo.--completed{ 
+    background-color: var(--gray-clr);
+    color: var(--main-clr);
+    text-decoration: line-through; 
+}
+.todo.--completed .todo__content,
+.todo.--completed .todo__btn-edit,
+.todo.--completed .todo__btn-delete{
+    color: var(--main-clr);
+}
+.todo__content,
+.todo__btn-edit,
+.todo__btn-delete{
+    position: relative;
+}
+.todo__content{
+    flex-grow: 1;
+    height: max-content;
+    padding: .25em 0 0 1ch;
+    text-align: left;
+    border: none;
+    outline: solid 1px transparent;
+    background: inherit;
+    color: white;
+    cursor: pointer;
+}
+.todo__btn-edit,
+.todo__btn-delete{
+    display: inline-block;
+    padding: .25em .45em;
+    margin-left: .30em;
+    height: max-content;
+    font-size: calc(var(--fz-normal) - 0.05rem);
+    background: inherit;
+    color: white;
+    outline: solid 1px transparent;
+    border-radius: 25%;
+    cursor: pointer;
+}
+.todo__btn-delete{
+    border: none;
+}
+[class*='todo']{
+    outline: ridge 2px transparent;
+    outline-offset: 1px;
+}
+[class*='todo']:focus{
+    outline: inherit;
+    outline-color: var(--main-clr);
+}
+@supports selector(:focus-visible){
+    [class*='todo']:focus{  outline: none; }
+    [class*='todo']:focus-visible{
+        outline: inherit;
+        outline-color: var(--main-clr);
+    }
+}
+@media (pointer:fine) and (hover:hover){
+    .todo [class*='todo']:hover{
+        background-color: var(--main-clr);
+        color: var(--white-clr);
+    }
+}

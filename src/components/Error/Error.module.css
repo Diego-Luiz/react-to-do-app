@@ -1,0 +1,27 @@
+.error{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: .25em .5em;
+    border: solid 1px red;
+    border-radius: 5px;
+    color: var(--error-clr);
+    box-sizing: border-box;
+}
+.error__msg{ font-size: var(--fz-smallest); }
+.error__close-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .001em;
+    border: none;
+    border-radius: 100%;
+    background: var(--error-clr);
+    color: var(--main-clr);
+    font-size: var(--fz-normal);
+    cursor: pointer;
+}

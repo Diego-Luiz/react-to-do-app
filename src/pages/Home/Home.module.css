@@ -1,0 +1,24 @@
+.app-title{
+    padding: .5em 0;
+    text-align: center;
+    font-size: var(--fz-biggest);
+}
+.todo-list{
+    width: 100%;
+    padding: .5em 0 1em;
+    list-style: none;
+    font-size: var(--fz-normal);
+}
+.todo-list__item:not(:first-child){ margin-top: 1em; }
+.todos-quantity{
+    display: inline-block;
+    width: max-content;
+    margin-top: 1em;
+    margin-left: auto;
+    padding: .25em .25em 0;
+    font-size: var(--fz-smallest);
+}
+.todos-quantity::before{
+    content: '\1F4CB';
+    margin-right: .25em;
+}

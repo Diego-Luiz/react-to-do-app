@@ -1,0 +1,45 @@
+#form-todo__input{
+    flex-grow: 1;
+    min-width: 10ch;
+    margin-right: .55em;
+    text-indent: .5em;
+    background-color: var(--main-clr);
+    border: none;
+    border-radius: 5px 0 0 5px;
+    color: white;
+    outline: solid 2px transparent;
+    outline-offset: -1px;
+    transition: outline 200ms ease-in-out;
+}
+#form-todo__input:focus{ outline-color: var(--white-clr); }
+#form-todo__input.edit-page{
+    margin: 0;
+    padding: 1em .5em;
+    border-radius: 5px;
+    resize: none;
+    outline-width: 3px;
+}
+#form-todo__input.edit-page:focus{
+    outline: inherit;
+    outline-offset: -3px;
+    outline-color: var(--purple-clr);   
+}
+@supports selector(:focus-visible){
+    #form-todo__input:focus,
+    #form-todo__input.edit-page:focus{ 
+        outline: none; 
+    }
+    #form-todo__input:focus-visible{ outline-color: var(--white-clr); }
+    #form-todo__input.edit-page:focus-visible{
+        outline: inherit;
+        outline-offset: -3px;
+        outline-color: var(--purple-clr);   
+    }
+}
+@media (hover:hover) and (pointer:fine){
+    #form-todo__input:hover{ outline-color: var(--white-clr); }
+    #form-todo__input.edit-page:hover{
+        outline-color: var(--purple-clr);   
+        outline-offset: -3px;
+    }
+}

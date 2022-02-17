@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../assets/fonts/Ubuntu/Ubuntu-Light.ttf) format(truetype);
+}
+:root{
+    --main-clr: #161A2B;
+    --purple-clr: #5d0cff;
+    --white-clr: #F2F2F0;
+    --gray-clr: #BFBFBD;
+    --pink-clr: #ff0075;
+    --blue-clr: #00a1ff;
+    --orange-clr: #FF5E3A;
+    --error-clr: #ff0000;
+    --fz-smallest: .85rem;
+    --fz-small: .95rem;
+    --fz-normal: 1.10rem;
+    --fz-big: 1.5rem;
+    --fz-biggest: 1.75rem;
+}
+p, ul, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 100vh;
+    background-color: #0069ff;
+    padding: 2em 0;
+    box-sizing: border-box;
+}
+.sr-only{
+    position: absolute;
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1em 1.25em;
+    width: 90%;
+    min-width: 256px;
+    max-width: 650px;
+    max-height: 150vh;
+    background-color: var(--main-clr);
+    color: white;
+    border-radius: 10px;
+    overflow: auto;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+    :root{
+        --fz-smallest: .95rem;
+        --fz-normal: 1.25rem;
+        --fz-biggest: 1.85rem;
+    }
+}
+@media screen and (min-width: 1440px){ 
+    :root{
+        --fz-smallest: 1.10rem;
+    }
+    #root{ max-width: 800px; } 
+}
+@media screen and (min-width: 3000px){
+    :root{
+        --fz-small: 1rem;
+        --fz-normal: 1.35rem;
+        --fz-big: 1.75rem;
+        --fz-biggest: 2rem;
+    }
+    #root{ max-width: 1200px;}
+}
