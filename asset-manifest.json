@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/todo-app/static/css/main.65dbafbd.css",
+    "main.js": "/todo-app/static/js/main.8685cd4f.js",
+    "static/media/Ubuntu-Light.ttf": "/todo-app/static/media/Ubuntu-Light.0dd2d5986e2731a16ee7.ttf",
+    "index.html": "/todo-app/index.html",
+    "main.65dbafbd.css.map": "/todo-app/static/css/main.65dbafbd.css.map",
+    "main.8685cd4f.js.map": "/todo-app/static/js/main.8685cd4f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.65dbafbd.css",
+    "static/js/main.8685cd4f.js"
+  ]
+}
