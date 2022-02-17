@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/todo-app/static/css/main.65dbafbd.css",
-    "main.js": "/todo-app/static/js/main.8685cd4f.js",
-    "static/media/Ubuntu-Light.ttf": "/todo-app/static/media/Ubuntu-Light.0dd2d5986e2731a16ee7.ttf",
-    "index.html": "/todo-app/index.html",
-    "main.65dbafbd.css.map": "/todo-app/static/css/main.65dbafbd.css.map",
-    "main.8685cd4f.js.map": "/todo-app/static/js/main.8685cd4f.js.map"
+    "main.css": "/react-to-do-app/static/css/main.b4d2a4eb.css",
+    "main.js": "/react-to-do-app/static/js/main.8685cd4f.js",
+    "static/media/Ubuntu-Light.ttf": "/react-to-do-app/static/media/Ubuntu-Light.0dd2d5986e2731a16ee7.ttf",
+    "index.html": "/react-to-do-app/index.html",
+    "main.b4d2a4eb.css.map": "/react-to-do-app/static/css/main.b4d2a4eb.css.map",
+    "main.8685cd4f.js.map": "/react-to-do-app/static/js/main.8685cd4f.js.map"
   },
   "entrypoints": [
-    "static/css/main.65dbafbd.css",
+    "static/css/main.b4d2a4eb.css",
     "static/js/main.8685cd4f.js"
   ]
 }
