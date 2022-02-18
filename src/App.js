@@ -92,7 +92,7 @@ class App extends React.Component{
  
   render(){
     return (
-      <Routes path='/'> 
+      <Routes path='/react-to-do-app'> 
         <Route index element={<Home
           inputToDo={this.state.inputToDo}
           handleChange={this.handleInputChange}
