@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { 
-  BrowserRouter, 
+  HashRouter, 
   Routes, 
   Route
 } from 'react-router-dom';
@@ -11,11 +11,11 @@ import './styles/global.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path='/*' element={<App/>} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

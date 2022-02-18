@@ -5,7 +5,7 @@ function Missing(){
   return (
     <>
       <h1 className={styles['missing-title']}>This page does not exist.</h1>
-      <Link to='/react-to-do-app' className={styles['missing-link']}>
+      <Link to='/' className={styles['missing-link']}>
         <span>Go to home page</span>
       </Link>
     </>

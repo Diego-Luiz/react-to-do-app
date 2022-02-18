@@ -34,7 +34,7 @@ function Edit({ toDos, handleDataChange, Errors, removeError, setErrorState }){
       return todo;
     });
     handleDataChange({toDos: afterEditToDos}, afterEditToDos);
-    navigate('/react-to-do-app');
+    navigate('/');
   }
   const handleChange = (evt) => {
     setInputToDo(evt.target.value);
